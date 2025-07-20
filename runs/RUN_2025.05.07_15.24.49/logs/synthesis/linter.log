@@ -1,0 +1,14 @@
+%Warning-UNUSEDSIGNAL: /openlane/designs/alu_8bit/src/alu_8bit.v:8:16: Bits of signal are not driven, nor used: 'carry'[7]
+                                                                     : ... note: In instance 'alu_8bit'
+    8 |     wire [7:0] carry;      
+      |                ^~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.018
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNOPTFLAT: /openlane/designs/alu_8bit/src/alu_8bit.v:8:16: Signal unoptimizable: Circular combinational logic: 'alu_8bit.carry'
+    8 |     wire [7:0] carry;      
+      |                ^~~~~
+                    /openlane/designs/alu_8bit/src/alu_8bit.v:8:16:      Example path: alu_8bit.carry
+                    /openlane/designs/alu_8bit/src/alu_1bit.v:7:5:      Example path: ALWAYS
+                    /openlane/designs/alu_8bit/src/alu_1bit.v:5:16:      Example path: alu_8bit.__Vcellout__alu1__cout
+                    /openlane/designs/alu_8bit/src/alu_1bit.v:5:16:      Example path: ASSIGNW
+                    /openlane/designs/alu_8bit/src/alu_8bit.v:8:16:      Example path: alu_8bit.carry

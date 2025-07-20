@@ -1,0 +1,9 @@
+{
+    "DESIGN_NAME": "alu_8bit",
+    "VERILOG_FILES": "dir::src/*.v",
+    "CLOCK_PORT": "",
+    "CLOCK_PERIOD": 10,
+    "FP_PDN_MULTILAYER": true,
+    "FP_SIZING": "relative",
+    "FP_CORE_UTIL": 60
+}
